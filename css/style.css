@@ -1,0 +1,64 @@
+body {
+  font-family: "Bebas Neue", cursive;
+}
+
+header {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+  background-color: beige;
+}
+
+
+
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  align-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.intro2 {
+  display: flex;
+  align-items: right;
+  justify-content: flex-start;
+  align-content: right;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.bloque {
+  background-color: coral;
+  height: 2px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.botonesCentrales {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-image: linear-gradient (blue, green, orange, red, violet);
+  font-size: large;
+}
+.flexi {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flexison1 {
+  display: flex;
+  justify-content: center;
+  height: 400px;
+  width: 400px;
+  text-align: center;
+}
+.flexison2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 400px;
+  width: 400px;
+}

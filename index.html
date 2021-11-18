@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=1, initial-scale=1.0" />
+    <title>Totalizador Stocks</title>
+    <link rel="icon" type="image/x-icon" href="./media/amplio-stock-icon.svg" />
+    <meta
+      name="description"
+      content="best webpage to make your owns trainings and onboarding presentations. You can add quiz and keep track of asistance & score"
+    />
+    <meta name="viewport" content="width=device-width initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <a name="targetDiv"></a>
+    <header class="header">
+      <img src="./media/amplio-stock-icon.svg" height="50" width="50" />
+      <ul>
+        <a href="#us">Nosotros</a>
+      </ul>
+      <ul>
+        <a href="#cargarNuevo">Cargas Nuevas</a>
+      </ul>
+      <ul>
+        <a href="#tot">Totalizador</a>
+      </ul>
+      <ul>
+        <input
+          type="barraBusqueda"
+          placeholder="buscar por nombre"
+          id="barraBusqueda1"
+        />
+      </ul>
+      <ul>
+        <input type="button" value="Buscar" id="btnBuscar" />
+      </ul>
+      <ul>
+        <input type="button" value="Limpiar" id="btnLimpiar" />
+      </ul>
+      <ul>
+        <input type="button" value="Ingresar" id="btnIngresar" />
+      </ul>
+      <ul>
+        <input
+          type="button"
+          value="Registrarse"
+          id="btnRegistrar"
+          style="background-color: aqua; font: bold"
+        />
+      </ul>
+    </header>
+    <a name="cargarNuevo"></a>
+    <div class="intro">
+      <h1 justify="center">Totalizador Stock</h1>
+    </div>
+    <h2>Cargar un nuevo producto</h2>
+    <div id="santiBusqueda"></div>
+    <div class="intro">
+      <h2 class="center">Nombre del producto</h2>
+      <input type="text" name="Nombre" id="Nombre" />
+      <br />
+      <h2 class="center">Unidad de medida</h2>
+      <input type="text" name="Unidad" id="Unidad" />
+      <br />
+      <h2 class="center">Precio Unidario</h2>
+      <input type="text" name="Precio" id="Precio" />
+      <br />
+      <h2 class="center">Cantidad</h2>
+      <input type="text" name="Cantidad" id="Cantidad" />
+    </div>
+    <br />
+    <br />
+    <br />
+    <div class="intro2">
+      <button id="agregar" class="center">Agregar</button>
+      <button id="totalizar" class="center">Mostrar totalizado reciente</button>
+    </div>
+
+    <div class="bloque"></div>
+    <div id="santi"></div>
+    <div class="bloque"></div>
+    <div id="santi2"></div>
+    <a name="tot" />
+    <div style="background-color: rgb(245, 218, 207); min-height: 15cm">
+      <h1>Productos en sistema</h1>
+      <div class="intro2">
+        <button id="totalizar2" class="center">
+          Mostrar totalizado global
+        </button>
+      </div>
+      <div class="col-md-6">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Nombre</th>
+              <th scope="col">Precio</th>
+              <th scope="col">Cantidad</th>
+              <th scope="col">Unidad</th>
+              <th scope="col">Valuación total</th>
+            </tr>
+          </thead>
+          <tbody id="tbody">
+            <tr>
+              <td>Termo Stanley</td>
+              <td>$6000</td>
+              <td>100</td>
+              <td>un</td>
+              <td>$600000 (ejemplo)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <a name="us"></a>
+    <div style="background-color: rgb(207, 239, 245); min-height: 5cm">
+      <div><h1>Quienes Somos?</h1></div>
+
+      <div>
+        <h3>
+          Somos una incipiente compañia que provee soluciones informáticas a
+          cuestiones administrativas repetitivas. Ayudamos a estandarizar
+          procesos, reducir costos, mejorar la prestación del servicio y generar
+          más valor agregado.
+        </h3>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+
+  <a href="#targetDiv">Volver Arriba</a>
+</html>
